@@ -1,3 +1,61 @@
 <html>
-
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Colorful Greeting</title>
+            <style>
+                body {
+                    font-family: Arial, sans-serif;
+                    background-color: #f0f8ff;
+                    color: #333;
+                    text-align: center;
+                    padding: 50px;
+                }
+                h1 {
+                    color: #ff6347;
+                }
+                button {
+                    background-color: #4caf50;
+                    color: white;
+                    border: none;
+                    padding: 15px 32px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 16px;
+                    margin: 20px;
+                    cursor: pointer;
+                    border-radius: 8px;
+                    transition: background-color 0.3s;
+                }
+                button:hover {
+                    background-color: #45a049;
+                }
+                .long-greeting {
+                    color: #ff1493;
+                    font-size: 20px;
+                    font-weight: bold;
+                    margin-top: 20px;
+                }
+            </style>
+        </head>
+        <body>
+        
+            <h1>Hello, Welcome to my webpage! 😊</h1>
+            
+            <button onclick="displayGreeting()">Click for a longer greeting</button>
+            
+            <p id="long-greeting" class="long-greeting" style="display:none;">
+                Hello there! I'm so glad you're visiting my webpage. You're amazing, and I hope you have a wonderful day filled with smiles and happiness! 😊
+            </p>
+        
+            <script>
+                function displayGreeting() {
+                    var greeting = document.getElementById("long-greeting");
+                    greeting.style.display = "block";
+                }
+            </script>
+        
+        </body>
 </html>
